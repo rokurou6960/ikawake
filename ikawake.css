@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'イカモドキ';
+    src: url('ikamodoki1_0.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	max-width: 290pt;
+}
+
+ul {
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+	border-radius: 10pt 30pt 10pt 30pt / 30% 70% 30% 70%;
+	border: 4pt solid;
+	margin: 2pt;
+	padding: 0pt 20pt;
+}
+
+li {
+	padding: 6px;
+	background-color: purple;
+	border-color: mediumpurple;
+}
+
+li span {
+	font-weight: bold;
+	color:  white;
+	float:right;
+	margin-right: 20pt;
+}
+
+.fight li[class="null"] {
+	visibility: hidden;
+}
+
+input {
+	border: none;
+	margin: 0pt 20pt;
+	background-color: transparent;
+	font-weight: bold;
+	color:  white;
+}
+
+.alfa {
+	background-color: orange;
+	border-color: darkorange;
+}
+
+.bravo {
+	background-color: royalblue;
+	border-color: deepskyblue;
+}
+
+#wake button {
+	background-color: yellow;
+	border-color: lightgoldenrodyellow;
+}
+
+.fight #wake {
+	display : none;
+}
+
+.entry #ok {
+	display : none;
+}
+
+.entry #fight, .wake #fight {
+	display : none;
+}
+
+.button {
+	width: 100%;
+	font-family:'イカモドキ';
+}
+
+button {
+	border-radius: 50%;
+	font-family:'イカモドキ';
+	width: 39%;
+}
+
+button.right {
+	float:right;
+}
+
