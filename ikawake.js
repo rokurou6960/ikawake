@@ -291,12 +291,20 @@ function refleshCorps() {
 }
 
 function change(input) {
+	if (frends.some(function(v) {
+		if (v.name == input.value)
+			return true;
+	})) {
+		input.value = (frends[input.id] || {name:''}).name;
+		return false;
+	}
 	escape(input.id);
 	if (input.value)
 		entry(input.value);
 	mode('entry');
 	refleshFrends();
 	patternGen();
+	return true;
 }
 
 function rslt(winner) {
